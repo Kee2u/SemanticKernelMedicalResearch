@@ -1,0 +1,13 @@
+
+[INPUT]
+
+
+{{$original}} 
+
+Generate a new summary based on the input and make sure to keep the full summary text ( {{$summary}}) remains the same size and format and export it at the same length with these edits: {{$user_input}} export the entire factsheet. 
+
+    Ensure you use the metric names as titles as shown above
+    Format the above in markdown format by highlighting the one sentence summary and including the subheadings as highlighted bullet points underneath. 
+    Make sure you copy the inputs exactly without adding additional details 
+    Make sure you add a new line after each bullet point.
+    If the inputs say that the metric could not be found or was not mentioned in the report, add ** before and after the sentence. Use the example in 'NOT FOUND TEMPLATE' as a guideline.

@@ -1,0 +1,9 @@
+BEGIN CONTENT TO SUMMARIZE:
+
+{{$input}}
+
+END CONTENT TO SUMMARIZE.
+For the metrics mentioned in the summary in 'CONTENT TO SUMMARIZE', return if they are reported quarterly or yearly. 
+If it is quarterly, use the term QTR_ROLL and if it is yearly use the term ANN_ROLL
+The output should be in a string format 
+

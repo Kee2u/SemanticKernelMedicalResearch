@@ -1,0 +1,20 @@
+BEGIN CONTENT TO SUMMARIZE:
+
+{{$input}}
+END CONTENT TO SUMMARIZE.
+
+BEGIN STRUCTURE: 
+
+Write the article in this tone {{$tone}} and use the following words in the Structure refelective of the tone.
+Bullish: beat, strong, robust, acceleration, expansion, accretive, better-than-expected, well-ahead of.
+Neutral: mixed, in-line, flat, flattish, neutral, inline, met, light of.
+Bearish: missed, weak, disappointing, deceleration, contraction, destructive, below expectation, material miss.
+Investment Recommendation \n
+Add summary here.
+END STRUCTURE
+
+Incorporate {{$context}} in the summary. Replace all values with ones from 'CONTENT TO SUMMARIZE'. Match the metrics and replace with ones in input.
+Based on the financial news article in 'CONTENT TO SUMMARIZE', summarize key information for investors owning the share similar to the example structure in 'STRUCTURE'
+Make sure you include the start and end date of the reporting period.
+Do not incorporate other general knowledge.
+Summary is in complete sentences.

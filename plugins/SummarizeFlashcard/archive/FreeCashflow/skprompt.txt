@@ -1,0 +1,11 @@
+BEGIN CONTENT TO SUMMARIZE:
+
+{{$input}}
+
+END CONTENT TO SUMMARIZE.
+BEGIN STRUCTURE: 
+• Free Cash flow: Add summary here.
+END STRUCTURE
+Extract and summarize the Free Cashflow information from the financial news article in 'CONTENT TO SUMMARIZE' using the example structure in 'STRUCTURE'
+Do not incorporate other general knowledge.
+Summary is in complete sentences.

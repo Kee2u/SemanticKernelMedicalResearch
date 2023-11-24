@@ -1,0 +1,32 @@
+{
+    "schema": 1,
+    "type": "completion",
+    "description": "refines the summary through a chat interface",
+    "completion": {
+        "max_tokens": 4000,
+        "temperature": 0,
+        "top_p": 0,
+        "presence_penalty": 0,
+        "frequency_penalty": 0
+    },
+    "input": {
+        "parameters": [
+            {
+                "name": "original",
+                "description": "the summary that needs to be reworded.",
+                "defaultValue": ""
+            },
+            {
+                "name": "user_input",
+                "description": "the change the user wanted to make",
+                "defaultValue": ""
+            },
+            {
+                "name": "summary",
+                "description": "the original text",
+                "defaultValue": ""
+            }
+        ]
+    },
+    "default_backends": []
+}

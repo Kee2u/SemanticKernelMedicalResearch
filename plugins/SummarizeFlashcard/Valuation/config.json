@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "description": "Given a financial earnings call press release and metric valyes, generate a valuation of the share price",
+  "type": "completion",
+  "completion": {
+    "max_tokens": 400,
+    "temperature": 0.1,
+    "top_p": 0.5,
+    "presence_penalty": 0.0,
+    "frequency_penalty": 0.0
+  },
+  "input": {
+    "parameters": [
+      {
+            "name": "TargetPrice",
+            "description": "Canaccord's estimate for the target price of the stock",
+            "defaultValue": ""
+      },
+      {
+            "name": "EV",
+            "description": "Enterprise Value",
+            "defaultValue": ""
+      },
+      {
+            "name": "MarketCap",
+            "description": "Market Capitalization",
+            "defaultValue": ""
+      },
+      {
+            "name": "DividendperShare",
+            "description": "Represents the consensus estimate of the total dividends per share declared including extra dividends for the primary share class of the company",
+            "defaultValue": ""
+      },
+      {
+            "name": "DividendYield",
+            "description": "Calculated by dividing the estimated Dividends Per Share by the Price of a security.",
+            "defaultValue": ""
+      },
+      {
+            "name": "EVSales",
+            "description": "EV/Sales - Calculated by dividing the EV by the estimated Sale of a security.",
+            "defaultValue": ""
+      },
+      {
+            "name": "EVGrossProfit",
+            "description": "EV/GrossProfit - Calculated by dividing the EV by the Gross Margin of a security.",
+            "defaultValue": ""
+      },
+      {
+            "name": "EVEBITDA",
+            "description": "EV/EBITDA - Calculated by dividing the EV by the EBITDA of a security.",
+            "defaultValue": ""
+      },
+      {
+            "name": "PE",
+            "description": "P/E - Calculated by dividing the Price by the estimated EPS of a security.",
+            "defaultValue": ""
+      },
+      {
+            "name": "PFCF",
+            "description": "P/FCF - Calculated by dividing the Price by the estimated Free Cash Flow Per Share of a security.",
+            "defaultValue": ""
+      },
+      {
+            "name": "FCFYield",
+            "description": "FCF Yield - Calculated by dividing the estimated Free Cash Flow (FCF) by the Market Capitalization of a security.",
+            "defaultValue": ""
+      }
+  ]
+  }
+
+}

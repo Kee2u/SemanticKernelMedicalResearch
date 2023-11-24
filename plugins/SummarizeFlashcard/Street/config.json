@@ -1,0 +1,331 @@
+{
+    "schema": 1,
+    "description": "Takes the summarized metric information such as revenue or gross margin and input article and uses  it to create a flashcard",
+    "type": "completion",
+    "completion": {
+        "max_tokens": 6000,
+        "temperature": 0.1,
+        "top_p": 0.5,
+        "presence_penalty": 0,
+        "frequency_penalty": 0
+    },
+    "input": {
+        "parameters": [
+            {
+                "name": "Summary",
+                "description": "The summary flashcard that was generated",
+                "defaultValue": ""
+            },
+            {
+                "name": "Revenue",
+                "description": "Summarized Revenue information",
+                "defaultValue": ""
+            },
+            {
+                "name": "GrossProfit",
+                "description": "Gross Profit information",
+                "defaultValue": ""
+            },
+            {
+                "name": "GrossMargin",
+                "description": "Gross Margin GM information",
+                "defaultValue": ""
+            },
+            {
+                "name": "OperatingProfit",
+                "description": "Operating Profit information",
+                "defaultValue": ""
+            },
+            {
+                "name": "OperatingMarginsEBIT",
+                "description": "Operating Margins EBIT information",
+                "defaultValue": ""
+            },
+            {
+                "name": "EBIT",
+                "description": "EBIT information",
+                "defaultValue": ""
+            },
+            {
+                "name": "AdjEBITDA",
+                "description": "Adjusted EBITDA information",
+                "defaultValue": ""
+            },
+            {
+                "name": "AdjEBITDAmargin",
+                "description": "Adjusted EBITDA Margin information",
+                "defaultValue": ""
+            },
+            {
+                "name": "NetIncome",
+                "description": "Net Income information",
+                "defaultValue": ""
+            },
+            {
+                "name": "EPS",
+                "description": "EPS information",
+                "defaultValue": ""
+            },
+            {
+                "name": "AdjEPS",
+                "description": "Adjusted EPS information",
+                "defaultValue": ""
+            },
+            {
+                "name": "OperatingCashFlow",
+                "description": "Operating Cash Flow information",
+                "defaultValue": ""
+            },
+            {
+                "name": "FreeCashFlow",
+                "description": "Free Cash Flow information",
+                "defaultValue": ""
+            },
+            {
+                "name": "NetDebt",
+                "description": "Net Debt information",
+                "defaultValue": ""
+            },
+            {
+                "name": "TangibleBookValue",
+                "description": "Tangible Book Value information",
+                "defaultValue": ""
+            },
+            {
+                "name": "PEGRatio",
+                "description": "PEG Ratio information",
+                "defaultValue": ""
+            },
+            {
+                "name": "AnnualRecurringRevenueARR",
+                "description": "Annual Recurring Revenue ARR information",
+                "defaultValue": ""
+            },
+            {
+                "name": "NetDollarRetentionNDR",
+                "description": "Net Dollar Retention NDR information",
+                "defaultValue": ""
+            },
+            {
+                "name": "CashEPS",
+                "description": "Cash EPS information",
+                "defaultValue": ""
+            },
+            {
+                "name": "EPSgrowth",
+                "description": "EPS Growth information",
+                "defaultValue": ""
+            },
+            {
+                "name": "PCLratio",
+                "description": "PCL Ratio information",
+                "defaultValue": ""
+            },
+            {
+                "name": "NIM",
+                "description": "NIM information",
+                "defaultValue": ""
+            },
+            {
+                "name": "NonInterestIncome",
+                "description": "Non-Interest Income information",
+                "defaultValue": ""
+            },
+            {
+                "name": "Production",
+                "description": "Production information",
+                "defaultValue": ""
+            },
+            {
+                "name": "CashCost",
+                "description": "Cash Cost information",
+                "defaultValue": ""
+            },
+            {
+                "name": "AllinSustainingCostAISC",
+                "description": "All in Sustaining Cost AISC information",
+                "defaultValue": ""
+            },
+            {
+                "name": "EBITDA",
+                "description": "EBITDA information",
+                "defaultValue": ""
+            },
+            {
+                "name": "CapExCapitalExpenditures",
+                "description": "Capital Expenditures information",
+                "defaultValue": ""
+            },
+            {
+                "name": "EBITDAMarginPercentage",
+                "description": "EBITDA Margin Percentage information",
+                "defaultValue": ""
+            },
+            {
+                "name": "CashFlowPerShareCFPS",
+                "description": "Cash Flow Per Share CFPS information",
+                "defaultValue": ""
+            },
+            {
+                "name": "ProductionBOEd",
+                "description": "Production BOEd information",
+                "defaultValue": ""
+            },
+            {
+                "name": "Revenuecg",
+                "description": "",
+                "defaultValue": ""
+            },
+            {
+                "name": "GrossProfitcg",
+                "description": "",
+                "defaultValue": ""
+            },
+            {
+                "name": "GrossMargincg",
+                "description": "",
+                "defaultValue": ""
+            },
+            {
+                "name": "OperatingProfitcg",
+                "description": "",
+                "defaultValue": ""
+            },
+            {
+                "name": "OperatingMarginsEBITcg",
+                "description": "",
+                "defaultValue": ""
+            },
+            {
+                "name": "EBITcg",
+                "description": "",
+                "defaultValue": ""
+            },
+            {
+                "name": "AdjEBITDAcg",
+                "description": "",
+                "defaultValue": ""
+            },
+            {
+                "name": "NetIncomecg",
+                "description": "",
+                "defaultValue": ""
+            },
+            {
+                "name": "TangibleBookValuecg",
+                "description": "",
+                "defaultValue": ""
+            },
+            {
+                "name": "AdjEBITDAmargincg",
+                "description": "",
+                "defaultValue": ""
+            },
+            {
+                "name": "EPScg",
+                "description": "",
+                "defaultValue": ""
+            },
+            {
+                "name": "AdjEPScg",
+                "description": "",
+                "defaultValue": ""
+            },
+            {
+                "name": "OperatingCashFlowcg",
+                "description": "",
+                "defaultValue": ""
+            },
+            {
+                "name": "FreeCashFlowcg",
+                "description": "",
+                "defaultValue": ""
+            },
+            {
+                "name": "PEGRatiocg",
+                "description": "",
+                "defaultValue": ""
+            },
+            {
+                "name": "NetDebtcg",
+                "description": "",
+                "defaultValue": ""
+            },
+            {
+                "name": "AnnualRecurringRevenueARRcg",
+                "description": "",
+                "defaultValue": ""
+            },
+            {
+                "name": "NetDollarRetentionNDRcg",
+                "description": "",
+                "defaultValue": ""
+            },
+            {
+                "name": "CashEPScg",
+                "description": "",
+                "defaultValue": ""
+            },
+            {
+                "name": "EPSgrowthcg",
+                "description": "",
+                "defaultValue": ""
+            },
+            {
+                "name": "PCLratiocg",
+                "description": "",
+                "defaultValue": ""
+            },
+            {
+                "name": "NIMcg",
+                "description": "",
+                "defaultValue": ""
+            },
+            {
+                "name": "NonInterestIncomecg",
+                "description": "",
+                "defaultValue": ""
+            },
+            {
+                "name": "Productioncg",
+                "description": "",
+                "defaultValue": ""
+            },
+            {
+                "name": "AllinSustainingCostAISCcg",
+                "description": "",
+                "defaultValue": ""
+            },
+            {
+                "name": "CashCostcg",
+                "description": "",
+                "defaultValue": ""
+            },
+            {
+                "name": "EBITDAcg",
+                "description": "",
+                "defaultValue": ""
+            },
+            {
+                "name": "CapExCapitalExpenditurescg",
+                "description": "",
+                "defaultValue": ""
+            },
+            {
+                "name": "EBITDAMarginPercentagecg",
+                "description": "",
+                "defaultValue": ""
+            },
+            {
+                "name": "CashFlowPerShareCFPScg",
+                "description": "",
+                "defaultValue": ""
+            },
+            {
+                "name": "ProductionBOEdcg",
+                "description": "",
+                "defaultValue": ""
+            }
+        ]
+    }
+}

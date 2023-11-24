@@ -1,0 +1,11 @@
+BEGIN CONTENT TO SUMMARIZE:
+
+{{$input}}
+
+END CONTENT TO SUMMARIZE.
+BEGIN STRUCTURE: 
+• Cash: Add summary here.
+END STRUCTURE
+Extract and summarize the Cash from the financial news article in 'CONTENT TO SUMMARIZE' using the example structure in 'STRUCTURE'
+Do not incorporate other general knowledge.
+Summary is in complete sentences.

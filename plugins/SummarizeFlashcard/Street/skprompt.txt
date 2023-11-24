@@ -1,0 +1,88 @@
+BEGIN SUMMARY
+{{$Summary}}
+END SUMMARY
+Take the summary flashcard  in 'SUMMARY'
+add the street metrics (
+Revenue: {{$Revenue}}
+Gross Profit: {{$GrossProfit}}
+Gross Margin: {{$GrossMargin}}
+Operating Profit: {{$OperatingProfit}}
+Operating Margins (EBIT): {{$OperatingMarginsEBIT}}
+EBIT: {{$EBIT}}
+Adj EBITDA: {{$AdjEBITDA}}
+Adj EBITDA margin: {{$AdjEBITDAmargin}}
+Net Income: {{$NetIncome}}
+EPS: {{$EPS}}
+Adj EPS: {{$AdjEPS}}
+Operating Cash Flow: {{$OperatingCashFlow}}
+Free Cash Flow: {{$FreeCashFlow}}
+Net Debt: {{$NetDebt}}
+Tangible Book Value: {{$TangibleBookValue}}
+PEG Ratio: {{$PEGRatio}}
+Annual Recurring Revenue (ARR): {{$AnnualRecurringRevenueARR}}
+Net Dollar Retention (NDR): {{$NetDollarRetentionNDR}}
+Cash EPS: {{$CashEPS}}
+EPS Growth: {{$EPSgrowth}}
+PCL Ratio: {{$PCLratio}}
+NIM (Net Interest Margin): {{$NIM}}
+Non-Interest Income: {{$NonInterestIncome}}
+Production: {{$Production}}
+Cash Cost: {{$CashCost}}
+All-in Sustaining Cost (AISC): {{$AllinSustainingCostAISC}}
+EBITDA: {{$EBITDA}}
+Capital Expenditures (CapEx): {{$CapExCapitalExpenditures}}
+EBITDA Margin Percentage: {{$EBITDAMarginPercentage}}
+Cash Flow Per Share (CFPS): {{$CashFlowPerShareCFPS}}
+Production (BOE): {{$ProductionBOEd}}) 
+
+
+and the cg metrics (
+Revenuecg: {{$Revenuecg}}
+Gross Profitcg: {{$GrossProfitcg}}
+Gross Margincg: {{$GrossMargincg}}
+Operating Profitcg: {{$OperatingProfitcg}}
+Operating Margins (EBIT)cg: {{$OperatingMarginsEBITcg}}
+EBITcg: {{$EBITcg}}
+Adj EBITDAcg: {{$AdjEBITDAcg}}
+Adj EBITDA margincg: {{$AdjEBITDAmargincg}}
+Net Incomecg: {{$NetIncomecg}}
+EPScg: {{$EPScg}}
+Adj EPScg: {{$AdjEPScg}}
+Operating Cash Flowcg: {{$OperatingCashFlowcg}}
+Free Cash Flowcg: {{$FreeCashFlowcg}}
+Net Debtcg: {{$NetDebtcg}}
+Tangible Book Valuecg: {{$TangibleBookValuecg}}
+PEG Ratiocg: {{$PEGRatiocg}}
+Annual Recurring Revenue (ARR)cg: {{$AnnualRecurringRevenueARRcg}}
+Net Dollar Retention (NDR)cg: {{$NetDollarRetentionNDRcg}}
+Cash EPScg: {{$CashEPScg}}
+EPS Growthcg: {{$EPSgrowthcg}}
+PCL Ratiocg: {{$PCLratiocg}}
+NIMcg (Net Interest Margin): {{$NIMcg}}
+Non-Interest Incomecg: {{$NonInterestIncomecg}}
+Productioncg: {{$Productioncg}}
+Cash Costcg: {{$CashCostcg}}
+All-in Sustaining Cost (AISC)cg: {{$AllinSustainingCostAISCcg}}
+EBITDAcg: {{$EBITDAcg}}
+Capital Expenditures (CapEx)cg: {{$CapExCapitalExpenditurescg}}
+EBITDA Margin Percentagecg: {{$EBITDAMarginPercentagecg}}
+Cash Flow Per Share (CFPS)cg: {{$CashFlowPerShareCFPScg}}
+Production (BOE)cg: {{$ProductionBOEdcg}})
+
+
+in the relevant bullet points. Add them in the metric bullet points as well as the investment recommendation and the outlook. 
+Do not miss adding them in the metric bullet points even if the bullet points say the metric could not be found in the article.
+Do not miss adding them to the outlook.
+Do not miss operating profit even if it says operating income in the summary. 
+Do not add new sentences. Do not change the 'SUMMARY'. But remove BEGIN SUMMARY and END SUMMARY in the final text. 
+Do not remove the title. 
+Make sure you maintain any formatting including any instances of **:red[]** in the summary.
+Follow the format in 'FORMAT'
+The metrics should only be included if there is a bullet point with the same metric named. 
+Add them after the metric dollar amount is mentioned in the summary. If the dollar amount is not mentioned, add it to the end of the metric summary.
+Make sure that the decimal precision is one digit after decimal.Only mention them if they are not 'None'. Format them according to 'FORMAT' 
+if it's million use M if billion use B if it's a percent use % 
+BEGIN FORMAT
+(Street $43.4M/ CGe $43.4M) or (Street $2.4B/ CGe $2.4B) or (Street 54.2%/ CGe 50.2%  )
+END FORMAT
+

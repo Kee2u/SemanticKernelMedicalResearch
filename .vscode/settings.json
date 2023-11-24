@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "undefined/subscriptions/afecc720-5dfb-4159-90b8-d649aa831bda/resourceGroups/keerthana-openai-rg/providers/Microsoft.Web/sites/MedicalResearchAssistant",
+    "appService.deploySubpath": "."
+}

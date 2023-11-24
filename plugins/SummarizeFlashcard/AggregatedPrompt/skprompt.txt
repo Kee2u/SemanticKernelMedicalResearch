@@ -1,0 +1,19 @@
+BEGIN CONTENT TO SUMMARIZE:
+
+{{$input}}
+
+END CONTENT TO SUMMARIZE.
+
+If the metrics enclosed in triple backticks and separated by commas are provided, extract and summarize the metric information from the research article
+in 'CONTENT TO SUMMARIZE'. 
+Structure the output stricly in dict format with the keys being the provided metrics and the values being the summaries.
+
+```{{$Abstract}},
+{{$Introduction}},
+{{$Methodology}},
+{{$Results}},
+{{$Conclusion}}```
+
+Do not incorporate other general knowledge.
+Summary is in complete sentences.
+Remember to structure the output stricly in dict format with the keys being the provided metrics and the values being the summaries.

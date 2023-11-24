@@ -1,0 +1,27 @@
+BEGIN CURRENT ARTICLE CONTENT TO SUMMARIZE:
+
+{{$input}}
+
+END CURRENT ARTICLE CONTENT TO SUMMARIZE.
+BEGIN PREVIOUS ARTICLE CONTENT TO SUMMARIZE:
+
+{{$previousinput}}
+
+END PREVIOUS ARTICLE CONTENT TO SUMMARIZE.
+BEGIN STRUCTURE: 
+• Outlook: **Outlook of the current quarter**\n
+ Add summary of content in 'CURRENT ARTICLE CONTENT TO SUMMARIZE' \n
+ **Outlook of the previous quarter**\n
+ Add summary of content in 'PREVIOUS ARTICLE CONTENT TO SUMMARIZE' \n
+ **Comparison of Outlooks**\n
+ Add a comparison between the two outlooks
+
+END STRUCTURE
+Extract and summarize the financial outlook of the company from the two financial news articles.
+Separate the outlook into two paragraphs with the headings, "Outlook of the current quarter" and "Outlook of the previous quarter".
+Summarize the content from 'CURRENT ARTICLE CONTENT TO SUMMARIZE' under "Outlook of the current quarter"
+and summarize the content from 'PREVIOUS ARTICLE CONTENT TO SUMMARIZE' under "Outlook of the previous quarter".
+Next compare the two outlooks under "Comparison of outlooks"
+Use the example structure in 'STRUCTURE'
+Do not incorporate other general knowledge.
+Summary is in complete sentences.

@@ -1,0 +1,9 @@
+streamlit==1.27.0
+PyPDF2==3.0.1
+requests==2.31.0
+beautifulsoup4==4.12.2
+pandas==2.1.1
+semantic-kernel==0.3.13.dev0
+azure-keyvault-secrets==4.7.0
+azure-identity==1.14.1
+pycryptodome==3.15.0

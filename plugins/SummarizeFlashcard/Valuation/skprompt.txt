@@ -1,0 +1,34 @@
+If the metrics enclosed in triple backticks and seperated by commas are a numeric value, use them tocreate a valuation summary of the stock. 
+```{{$TargetPrice}},{{$EV}},{{$MarketCap}},{{$DividendperShare}},{{$DividendYield}},{{$EVSales}},
+{{$EVGrossProfit}},{{$EVEBITDA}},{{$PE}},{{$PFCF}},{{$FCFYield}}```
+If the {{$TargetPrice}} is a numeric value, mention it and begin the summary using the example structure in 'STRUCTURE'
+Format the metrics with the value followed by 'x' and then the name of the metric as shown in 'FORMAT', if the metric is not {{$DividendYield}}. If it is {{$DividendYield}}, report the metric as a percentage.
+Get the name of the metric in 'NAME'
+
+
+BEGIN STRUCTURE
+CGe {{$TargetPrice}} PT is based on ... add metrics 
+END STRUCTURE  
+
+BEGIN FORMAT
+{{$EVSales}}xEV/Sales
+END FORMAT
+
+Add two digits after the decimal. Do not mention if metrics are unavailable.Do not incorporate other general knowledge. 
+For all metrics include only one digit after the decimal. Do not describe the metrics
+Summary is in complete sentences. 
+
+BEGIN NAME
+Here are the names of the metrics:
+{{$TargetPrice}} = TargetPrice. 
+{{$EV}} = EV or Enterprise Value
+{{$MarketCap}} = Market Capitalization
+{{$DividendperShare}} = Dividend per Share. Represents the consensus estimate of the total dividends per share declared including extra dividends for the primary share class of the company
+{{$DividendYield}} = Dividend Yield. Calculated by dividing the estimated Dividends Per Share by the Price of a security.
+{{$EVSales}} = EV/Sales. Calculated by dividing the EV by the estimated Sale of a security.
+{{$EVGrossProfit}} = EV/GrossProfit - Calculated by dividing the EV by the Gross Margin of a security.
+{{$EVEBITDA}} = EV/EBITDA - Calculated by dividing the EV by the EBITDA of a security.
+{{$PE}} = P/E - Calculated by dividing the Price by the estimated EPS of a security.
+{{$PFCF}} = P/FCF - Calculated by dividing the Price by the estimated Free Cash Flow Per Share of a security.
+{{$FCFYield}} = FCF Yield - Calculated by dividing the estimated Free Cash Flow (FCF) by the Market Capitalization of a security.
+END NAME     

@@ -1,0 +1,12 @@
+BEGIN CONTENT TO SUMMARIZE:
+
+{{$input}}
+
+END CONTENT TO SUMMARIZE.
+BEGIN STRUCTURE: 
+• Revenue: Add summary here.
+END STRUCTURE
+Extract and summarize the revenue information from the financial news article in 'CONTENT TO SUMMARIZE' using the example structure in 'STRUCTURE'. Do not include annual reccurring revenue
+Do not incorporate other general knowledge.
+Summary is in complete sentences.
+
