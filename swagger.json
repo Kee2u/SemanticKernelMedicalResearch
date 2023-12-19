@@ -1,204 +1,727 @@
 {
-  "openapi": "3.0.1",
-  "info": {
-    "title": "History Explorer ChatGPT Plugin",
-    "description": "An interactive plugin that uses SK and GPT to create personalized, immersive journeys through different historical eras, complete with interactive dialogues and historical trivia.",
-    "version": "1.0.0"
-  },
-  "servers": [
-    {
-      "url": "https://team4functionapppsaitech.azurewebsites.net"
+    "openapi": "3.0.1",
+    "info": {
+        "title": "Math Plugin",
+        "description": "A plugin that does math operations.",
+        "version": "1.0.0"
+    },
+    "servers": [
+        {
+            "url": "https://team4functionapppsaitech.azurewebsites.net"
+        }
+    ],
+    "paths": {
+        "/Sqrt": {
+            "post": {
+                "tags": [
+                    "Sqrt"
+                ],
+                "operationId": "Sqrt",
+                "requestBody": {
+                    "description": "JSON request body",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/sqrtModel"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "The OK response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/Add": {
+            "post": {
+                "tags": [
+                    "Add"
+                ],
+                "operationId": "Add",
+                "requestBody": {
+                    "description": "JSON request body",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/addModel"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "The OK response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/Subtract": {
+            "post": {
+                "tags": [
+                    "Subtract"
+                ],
+                "operationId": "Subtract",
+                "requestBody": {
+                    "description": "JSON request body",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/subtractModel"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "The OK response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/Multiply": {
+            "post": {
+                "tags": [
+                    "Multiply"
+                ],
+                "operationId": "Multiply",
+                "requestBody": {
+                    "description": "JSON request body",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/multiplyModel"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "The OK response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/Divide": {
+            "post": {
+                "tags": [
+                    "Divide"
+                ],
+                "operationId": "Divide",
+                "requestBody": {
+                    "description": "JSON request body",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/divideModel"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "The OK response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/Power": {
+            "post": {
+                "tags": [
+                    "Power"
+                ],
+                "operationId": "Power",
+                "requestBody": {
+                    "description": "JSON request body",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/powerModel"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "The OK response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/Log": {
+            "post": {
+                "tags": [
+                    "Log"
+                ],
+                "operationId": "Log",
+                "requestBody": {
+                    "description": "JSON request body",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/logModel"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "The OK response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/Round": {
+            "post": {
+                "tags": [
+                    "Round"
+                ],
+                "operationId": "Round",
+                "requestBody": {
+                    "description": "JSON request body",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/roundModel"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "The OK response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/Abs": {
+            "post": {
+                "tags": [
+                    "Abs"
+                ],
+                "operationId": "Abs",
+                "requestBody": {
+                    "description": "JSON request body",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/absModel"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "The OK response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/Floor": {
+            "post": {
+                "tags": [
+                    "Floor"
+                ],
+                "operationId": "Floor",
+                "requestBody": {
+                    "description": "JSON request body",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/floorModel"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "The OK response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/Ceiling": {
+            "post": {
+                "tags": [
+                    "Ceiling"
+                ],
+                "operationId": "Ceiling",
+                "requestBody": {
+                    "description": "JSON request body",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/ceilingModel"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "The OK response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/Sin": {
+            "post": {
+                "tags": [
+                    "Sin"
+                ],
+                "operationId": "Sin",
+                "requestBody": {
+                    "description": "JSON request body",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/sinModel"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "The OK response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/Cos": {
+            "post": {
+                "tags": [
+                    "Cos"
+                ],
+                "operationId": "Cos",
+                "requestBody": {
+                    "description": "JSON request body",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/cosModel"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "The OK response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/Tan": {
+            "post": {
+                "tags": [
+                    "Tan"
+                ],
+                "operationId": "Tan",
+                "requestBody": {
+                    "description": "JSON request body",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/tanModel"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "The OK response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/Asin": {
+            "post": {
+                "tags": [
+                    "Asin"
+                ],
+                "operationId": "Asin",
+                "requestBody": {
+                    "description": "JSON request body",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/asinModel"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "The OK response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/Acos": {
+            "post": {
+                "tags": [
+                    "Acos"
+                ],
+                "operationId": "Acos",
+                "requestBody": {
+                    "description": "JSON request body",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/acosModel"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "The OK response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/Atan": {
+            "post": {
+                "tags": [
+                    "Atan"
+                ],
+                "operationId": "Atan",
+                "requestBody": {
+                    "description": "JSON request body",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/atanModel"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "The OK response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "absModel": {
+                "type": "object",
+                "properties": {
+                    "number1": {
+                        "type": "number",
+                        "format": "double"
+                    }
+                }
+            },
+            "acosModel": {
+                "type": "object",
+                "properties": {
+                    "number1": {
+                        "type": "number",
+                        "format": "double"
+                    }
+                }
+            },
+            "addModel": {
+                "type": "object",
+                "properties": {
+                    "number1": {
+                        "type": "number",
+                        "format": "double"
+                    },
+                    "number2": {
+                        "type": "number",
+                        "format": "double"
+                    }
+                }
+            },
+            "asinModel": {
+                "type": "object",
+                "properties": {
+                    "number1": {
+                        "type": "number",
+                        "format": "double"
+                    }
+                }
+            },
+            "atanModel": {
+                "type": "object",
+                "properties": {
+                    "number1": {
+                        "type": "number",
+                        "format": "double"
+                    }
+                }
+            },
+            "ceilingModel": {
+                "type": "object",
+                "properties": {
+                    "number1": {
+                        "type": "number",
+                        "format": "double"
+                    }
+                }
+            },
+            "cosModel": {
+                "type": "object",
+                "properties": {
+                    "number1": {
+                        "type": "number",
+                        "format": "double"
+                    }
+                }
+            },
+            "divideModel": {
+                "type": "object",
+                "properties": {
+                    "number1": {
+                        "type": "number",
+                        "format": "double"
+                    },
+                    "number2": {
+                        "type": "number",
+                        "format": "double"
+                    }
+                }
+            },
+            "floorModel": {
+                "type": "object",
+                "properties": {
+                    "number1": {
+                        "type": "number",
+                        "format": "double"
+                    }
+                }
+            },
+            "logModel": {
+                "type": "object",
+                "properties": {
+                    "number1": {
+                        "type": "number",
+                        "format": "double"
+                    },
+                    "number2": {
+                        "type": "number",
+                        "format": "double"
+                    }
+                }
+            },
+            "multiplyModel": {
+                "type": "object",
+                "properties": {
+                    "number1": {
+                        "type": "number",
+                        "format": "double"
+                    },
+                    "number2": {
+                        "type": "number",
+                        "format": "double"
+                    }
+                }
+            },
+            "powerModel": {
+                "type": "object",
+                "properties": {
+                    "number1": {
+                        "type": "number",
+                        "format": "double"
+                    },
+                    "number2": {
+                        "type": "number",
+                        "format": "double"
+                    }
+                }
+            },
+            "roundModel": {
+                "type": "object",
+                "properties": {
+                    "number1": {
+                        "type": "number",
+                        "format": "double"
+                    },
+                    "number2": {
+                        "type": "number",
+                        "format": "double"
+                    }
+                }
+            },
+            "sinModel": {
+                "type": "object",
+                "properties": {
+                    "number1": {
+                        "type": "number",
+                        "format": "double"
+                    }
+                }
+            },
+            "sqrtModel": {
+                "type": "object",
+                "properties": {
+                    "number1": {
+                        "type": "number",
+                        "format": "double"
+                    }
+                }
+            },
+            "subtractModel": {
+                "type": "object",
+                "properties": {
+                    "number1": {
+                        "type": "number",
+                        "format": "double"
+                    },
+                    "number2": {
+                        "type": "number",
+                        "format": "double"
+                    }
+                }
+            },
+            "tanModel": {
+                "type": "object",
+                "properties": {
+                    "number1": {
+                        "type": "number",
+                        "format": "double"
+                    }
+                }
+            }
+        }
     }
-  ],
-  "paths": {
-    "/ADayInTheLifeOfAHistoricalFigure": {
-      "post": {
-        "tags": [
-          "ADayInTheLifeOfAHistoricalFigure"
-        ],
-        "description": "Create a detailed day-in-the-life story of a historical figure",
-        "operationId": "ADayInTheLifeOfAHistoricalFigure",
-        "requestBody": {
-          "description": "Name of the historical figure",
-          "content": {
-            "text/plain": {
-              "schema": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "The OK response",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "string"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/DiscoverHistoricalArtefacts": {
-      "post": {
-        "tags": [
-          "DiscoverHistoricalArtefacts"
-        ],
-        "description": "Construct a narrative around the discovery of a historical artifact",
-        "operationId": "DiscoverHistoricalArtefacts",
-        "requestBody": {
-          "description": "Name of the historical artifact",
-          "content": {
-            "text/plain": {
-              "schema": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "The OK response",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "string"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/ExploreAnAncientCivilisation": {
-      "post": {
-        "tags": [
-          "ExploreAnAncientCivilisation"
-        ],
-        "description": "Generate a detailed description of a day in an ancient civilization",
-        "operationId": "ExploreAnAncientCivilisation",
-        "requestBody": {
-          "description": "Name of the ancient civilization",
-          "content": {
-            "text/plain": {
-              "schema": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "The OK response",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "string"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/ExploreAncientTechnologies": {
-      "post": {
-        "tags": [
-          "ExploreAncientTechnologies"
-        ],
-        "description": "Generate an explanation about an ancient technology",
-        "operationId": "ExploreAncientTechnologies",
-        "requestBody": {
-          "description": "Name of the ancient technology",
-          "content": {
-            "text/plain": {
-              "schema": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "The OK response",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "string"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/JourneyThroughAnHistoricalEvent": {
-      "post": {
-        "tags": [
-          "JourneyThroughAnHistoricalEvent"
-        ],
-        "description": "Create an interactive story based on a historical event",
-        "operationId": "JourneyThroughAnHistoricalEvent",
-        "requestBody": {
-          "description": "Name of the historical event",
-          "content": {
-            "text/plain": {
-              "schema": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "The OK response",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "string"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/MeetHistoricalFigures": {
-      "post": {
-        "tags": [
-          "MeetHistoricalFigures"
-        ],
-        "description": "Generate a conversation with a historical figure",
-        "operationId": "MeetHistoricalFigures",
-        "requestBody": {
-          "description": "Name of the historical figure",
-          "content": {
-            "text/plain": {
-              "schema": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "The OK response",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "string"
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  },
-  "components": {
-    "schemas": {}
-  }
 }
