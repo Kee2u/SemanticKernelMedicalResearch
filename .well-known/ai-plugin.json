@@ -10,7 +10,7 @@
     },
     "api": {
         "type": "openapi",
-        "url": "https://team4functionapppsaitech.azurewebsites.net:443/swagger.json",
+        "url": "https://raw.githubusercontent.com/Kee2u/SemanticKernelMedicalResearch/main/swagger.json",
         "has_user_authentication": false
     },
     "logo_url": "https://team4functionapppsaitech.azurewebsites.net:443/logo.jpeg",
