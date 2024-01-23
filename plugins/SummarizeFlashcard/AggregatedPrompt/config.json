@@ -3,7 +3,7 @@
     "description": "Given a financial earnings call press release, extract the metrics specified by user",
     "type": "completion",
     "completion": {
-        "max_tokens": 6000,
+        "max_tokens": 4000,
         "temperature": 0.1,
         "top_p": 0.5,
         "presence_penalty": 0,

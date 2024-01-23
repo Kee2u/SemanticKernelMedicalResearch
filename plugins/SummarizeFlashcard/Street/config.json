@@ -3,7 +3,7 @@
     "description": "Takes the summarized metric information such as revenue or gross margin and input article and uses  it to create a flashcard",
     "type": "completion",
     "completion": {
-        "max_tokens": 6000,
+        "max_tokens": 4000,
         "temperature": 0.1,
         "top_p": 0.5,
         "presence_penalty": 0,
