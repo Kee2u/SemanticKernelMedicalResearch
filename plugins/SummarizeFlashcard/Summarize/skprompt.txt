@@ -1,7 +1,7 @@
 Write the article in this tone {{$tone}} 
 BEGIN STRUCTURE: 
 1. Begin with the research article name
-Format it as a heading by adding # to the start 
+Format it as a heading by adding #  to the start. Ensure you add a space after #. 
 2. If the following metrics are provided, list them in bulleted list.
 Example:
     -{{$Abstract}}
@@ -9,7 +9,7 @@ Example:
     -{{$Methodology}}
     -{{$Results}}
     -{{$Conclusion}}
-    Format the metric name titles by adding ## to the start 
+    Format the metric name titles by adding ## to the start. Ensure you add a space after ##. 
     Make sure you copy the inputs exactly without adding additional details 
     Make sure you add a new line after each bullet point.
    
