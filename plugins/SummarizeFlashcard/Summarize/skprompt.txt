@@ -1,17 +1,5 @@
 Write the article in this tone {{$tone}} 
-BEGIN HEADING EXAMPLE
-# Heading
-END HEADING EXAMPLE
-BEGIN SUBHEADING EXAMPLE
-## Sub Heading
-END SUBHEADING EXAMPLE
-BEGIN SECOND SUBHEADING EXAMPLE
-### Second Sub heading
-END SECOND SUBHEADING EXAMPLE
-BEGIN BULLET HEADING EXAMPLE
-**Bullet**
-END BULLET HEADING EXAMPLE
-BEGIN STRUCTURE: 
+
 1. Begin with the research article name
 Format it as a heading by adding # to the start as shown in 'HEADING EXAMPLE'
 2. If the following metrics are provided, list them in bulleted list.
@@ -24,4 +12,10 @@ Example:
     Format the metric name titles b# to the start as shown in 'SUB HEADING EXAMPLE'
     Make sure you copy the inputs exactly without adding additional details 
     Make sure you add a new line after each bullet point.
-   
+  
+BEGIN HEADING EXAMPLE
+# Heading
+END HEADING EXAMPLE
+BEGIN SUBHEADING EXAMPLE
+## Sub Heading
+END SUBHEADING EXAMPLE
