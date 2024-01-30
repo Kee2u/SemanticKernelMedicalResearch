@@ -9,7 +9,7 @@ Example:
     -{{$Methodology}}
     -{{$Results}}
     -{{$Conclusion}}
-    Format the metric name titles b# to the start as shown in 'SUB HEADING EXAMPLE'
+    Format the metric name titles by adding ## to the start as shown in 'SUB HEADING EXAMPLE'
     Make sure you copy the inputs exactly without adding additional details 
     Make sure you add a new line after each bullet point.
   
